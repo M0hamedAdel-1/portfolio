@@ -1,0 +1,92 @@
+.about {
+    margin-top: 30px;
+    padding: 0 15px; /* مهم للموبايل */
+}
+
+.about .container h1 {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text_color);
+    font-size: 40px;
+    position: relative;
+}
+
+.about .container span {
+    color: var(--accent_color);
+}
+
+.about .container h1::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent_color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* 🔥 الحل هنا */
+.about .container .content {
+    max-width: 600px; /* بدل width */
+    margin: 50px auto;
+    text-align: center;
+    line-height: 1.7;
+    color: var(--p_color);
+}
+
+.about .container .box {
+    padding: 20px;
+    background-color: var(--secondary_color);
+    border-radius: 13px;
+}
+
+.about .container .box h2 {
+    margin-bottom: 20px;
+    color: var(--accent_color);
+}
+
+.about .container .box p {
+    line-height: 1.8;
+    color: var(--text_color);
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+    .about .container h1 {
+        font-size: 28px;
+    }
+
+    .about .container .content {
+        margin: 30px auto;
+        font-size: 14px;
+    }
+
+    .about .container .box {
+        padding: 15px;
+    }
+
+    .about .container .box h2 {
+        font-size: 18px;
+    }
+
+    .about .container .box p {
+        font-size: 14px;
+    }
+}
+
+/* 📱 موبايل صغير */
+@media (max-width: 480px) {
+    .about .container h1 {
+        font-size: 24px;
+    }
+
+    .about .container .content {
+        font-size: 13px;
+    }
+
+    .about .container .box p {
+        font-size: 13px;
+    }
+}

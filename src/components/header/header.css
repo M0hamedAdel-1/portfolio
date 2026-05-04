@@ -1,0 +1,124 @@
+.header{
+    height: 70px;
+    border: 1px solid var(--border_color);
+    padding: 20px;
+    position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg_color);
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .logo span{
+    background: var(--accent_color);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .container .logo a{
+    color: var(--accent_color);
+    font-size: 25px;
+
+}
+.icon_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .container .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .container .links li{
+    margin-right: 20px;
+}
+.header .container .links li a{
+    color: var(--accent_color);
+}
+.header .container .links a.active{
+    background-color: var(--accent_color);
+    color: var(--secondary_color);
+    padding:10px 20px ;
+    border-radius: 12px;
+}
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header .container .mode svg{
+  color: var(--accent_color);
+    font-size: 25px;
+    cursor: pointer;
+}
+.burgerIcon{
+    display: none;
+}
+
+@media (max-width:992px) {
+    .header .container .icon_links .close_icon{
+        display: block;
+    }
+    .burgerIcon{
+        display: block;
+    }
+    .header .container .icon_links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    height: 100%;
+    border-right: 1px solid var(--accent_color);
+    bottom: 0;
+    top: 0;
+    left: -100%;
+    width:400px;
+    background-color: var(--bg_color);
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+    max-width: 100%;
+    padding-top: 50px;
+    }
+
+    .header .container .links{
+        flex-direction: column;
+        
+    }
+    .header .container  .links li {
+    margin-bottom: 25px;
+  }
+}
+.header .container .icon_links.show{
+    left: 0;
+}
+.burgerIcon{
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--text_color);
+}
+.close_icon{
+    right: 20px;
+    position: absolute;
+    top: 20px;
+    font-size: 25px;
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--text_color);
+    display: none;
+}
+.close_icon:hover{
+    color: rgb(244, 32, 32);
+}

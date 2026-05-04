@@ -1,0 +1,125 @@
+
+.connect {
+    margin-top: 30px;
+}
+.connect .container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connect .container .box h1{
+    color:var(--text_color) ;
+}
+.connect .container img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.connect .container .box span{
+    color: var(--accent_color);
+}
+.all_connects {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+@media (max-width:992px) {
+    .all_connects h3{
+        font-size: 17px;
+    }
+}
+.connects{
+    margin-top: 20px;
+}
+
+.connects .box_content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--main_color);
+    padding: 20px;
+    border-radius: 13px;
+}
+.connects .box_content svg{
+    font-size: 25px;
+    color: var(--accent_color);
+}
+.connects .box_content .text p{
+    margin-bottom: 10px;
+}
+.connects .box_content .text h3{
+    color: var(--accent_color);
+}
+.social{
+    margin-top: 20px;
+}
+.social h1{
+        text-align: center;
+    color: var(--accent_color);
+}
+.social .social_media{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+.social .social_media a{
+    color: var(--text_color);
+}
+.social .social_media .social_content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid var(--border_color);
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.social .social_media .social_content svg{
+    font-size: 25px;
+}
+.social .social_media .social_content:hover
+{
+
+    transform: scale(1.1);
+}
+.facebook,
+.linkedin ,
+.whatsapp ,
+.github{
+    transition: 0.4s;
+}
+.facebook:hover,
+.facebook_icon {
+  color: #1877f2;
+}
+.linkedin:hover,
+.social_media .linkedin_icon{
+
+  color: #0a66c2;
+}
+.whatsapp:hover,
+.whatsapp_icon {
+  color: #25d366;
+}
+.github:hover,
+.social_media .github_icon {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
