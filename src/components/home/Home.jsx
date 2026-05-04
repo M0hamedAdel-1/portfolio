@@ -28,7 +28,7 @@ const Home = () => {
             clean UI and smooth user experience.
           </motion.p>
           <div className="btns">
-            <Link to="/work">View My Work</Link>
+            <Link to="/projects">View My Work</Link>
             <Link
               target="_blank"
               to="https://drive.google.com/file/d/1LD7rUcSWJi9no4G3XomBwB8KLONKbQzj/view?usp=drivesdk"
