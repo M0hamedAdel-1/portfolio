@@ -94,7 +94,7 @@
   }
 }
 .skill_img{
-    background-color: var(--main_color);
+    background-color: var(--secondary_color);
     padding: 20px;
     border-radius: 12px;
     cursor: pointer;

@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: var(--main_color);
+    background-color: var(--secondary_color);
     padding: 20px;
     border-radius: 13px;
 }
@@ -81,7 +81,6 @@
 }
 .social .social_media .social_content:hover
 {
-
     transform: scale(1.1);
 }
 .facebook,
@@ -90,20 +89,15 @@
 .github{
     transition: 0.4s;
 }
-.facebook:hover,
 .facebook_icon {
   color: #1877f2;
 }
-.linkedin:hover,
 .social_media .linkedin_icon{
-
   color: #0a66c2;
 }
-.whatsapp:hover,
 .whatsapp_icon {
   color: #25d366;
 }
-.github:hover,
 .social_media .github_icon {
   color: #333;
 }
