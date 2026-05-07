@@ -59,7 +59,7 @@ const Works = () => {
           <motion.div className="project" variants={item}>
             <img src="../../../images/projectfour.png"/>
             <div className="body">
-              <h3>Hangman game</h3>
+              <h3>Dashboard</h3>
               <p>A multi-page responsive Admin Dashboard built with HTML, CSS, and JavaScript featuring sections like profile, projects, courses, files, and settings with a clean and structured UI design.</p>
               <div className="icons">
                   <a href="https://github.com/M0hamedAdel-1/dashboard" target="_blank"><FiGithub/></a>
