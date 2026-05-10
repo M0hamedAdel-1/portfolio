@@ -67,6 +67,17 @@ const Works = () => {
               </div>
             </div>
           </motion.div>
+          <motion.div className="project" variants={item}>
+            <img src="../../../images/quran.png"/>
+            <div className="body">
+              <h3>quran app</h3>
+              <p>Islamic web app built with React.js and Tailwind CSS featuring Quran audio, Tafseer, live radio, prayer times based on user location, and live streaming with a modern responsive UI.</p>
+              <div className="icons">
+                  <a href="https://github.com/M0hamedAdel-1/islamic-media-player" target="_blank"><FiGithub/></a>
+                  <a href="https://islamic-media-player.vercel.app/" target="_blank"><FaEye/></a>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
 
       </div>
