@@ -31,7 +31,7 @@ const Home = () => {
             <Link to="/projects">View My Work</Link>
             <Link
               target="_blank"
-              to="https://drive.google.com/file/d/1LD7rUcSWJi9no4G3XomBwB8KLONKbQzj/view?usp=drivesdk"
+              to="https://drive.google.com/file/d/1U3mQfg43YvjNsvQ3Z-zywkzJk2MS77ea/view?usp=sharing"
             >
               view cv
             </Link>
